@@ -38,6 +38,7 @@
     source: "{{item.source}}"
     permanent: true
     state: enabled
+    immediate: true
   with_items: "{{firewall_sources}}"
   tags: firewall
   notify: reload firewall
@@ -48,6 +49,7 @@
     interface: "{{item.interface}}"
     permanent: true
     state: enabled
+    immediate: true
   with_items: "{{firewall_interfaces}}"
   tags: firewall
   notify: reload firewall
