@@ -1,9 +1,11 @@
 ---
+
 - name: Install basic utils
   yum:
    name: "{{ item }}"
    state: present
   loop:
+<<<<<<< Updated upstream
     - vim
     - wget
     - net-tools
@@ -26,4 +28,11 @@
     name: python-pip
     state: latest
     enablerepo: epel
+=======
+   - vim
+   - wget
+   - net-tools
+   - lsof
+   - telnet
+>>>>>>> Stashed changes
   tags: basic_utils_install

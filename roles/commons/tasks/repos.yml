@@ -11,7 +11,11 @@
   copy: src=etc/yum.repos.d/mongodb-org-3.2.repo
         dest=/etc/yum.repos.d/mongodb-org-3.2.repo backup=no
         owner=root group=root mode=0644
+<<<<<<< Updated upstream
   when: repo_mongo
+=======
+  when: mongo_repo
+>>>>>>> Stashed changes
 
 
 - name: Install EGI-trustanchors repository definitions
